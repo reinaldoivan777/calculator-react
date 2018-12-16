@@ -1,32 +1,47 @@
+.btn {
+  border-radius: 50%;
+  border: none;
+  color: #5b5b5b;
+  display: inline-block;
+  font-size: 16px;
+  padding: 30px;
+  margin-right: 16px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.btnDigit {
+  background-color: #def3f4;
+}
+
+.btnOperator {
+  background-color: #fff6db;
+}
+
+.btnClear {
+  border-radius: 30px;
+  width: 238px;
+  border: none;
+  color: #5b5b5b;
+  display: inline-block;
+  font-size: 16px;
+  padding: 30px;
+  margin-right: 16px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: 'Arimo', sans-serif;
+  letter-spacing: 6px;
+}
+
 .App {
+  width: 28%;
   text-align: center;
+  position: relative;
+  margin-left: 500px;
+  border: 1px solid blue;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  width: 90%;
 }
