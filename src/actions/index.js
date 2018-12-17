@@ -1,20 +1,19 @@
-export const digitPressed = (number) => {
+export const addElem = (text) => {
     return {
-        type: 'DIGIT_PRESSED',
-        digit: number
+        type: 'ADD_ELEM',
+        text
     }
 }
 
-export const operationPressed = (operation) => {
+export const clear = () => {
     return {
-        type: 'OPERATION_PRESSED',
-        operation: operation
+        type: 'CLEAR',
     }
 }
 
-export const evaluationPressed = () => {
+export const equal = (value) => {
     return {
-        type: 'EVALUATION_PRESSED',
-        operation: '='
+        type: 'EQUAL',
+        value
     }
 }

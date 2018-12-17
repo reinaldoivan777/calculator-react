@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
-import '../App.css'
+import { connect } from "react-redux";
 
 class Display extends Component {
-    render() { 
+    render() {
         return (
             <div className="display">
-                {this.props.input}
+                <div className="result">
+                    {(this.props.value != 0) ? this.props.value : 0}
+                </div>
                 <hr/>
             </div>
         )
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        value: state.calculator.value
+    }
+}
  
-export default Display;
+export default connect(mapStateToProps)(Display);

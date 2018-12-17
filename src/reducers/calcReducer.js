@@ -1,5 +1,3 @@
-import * as action from '../actions'
-
 const initialState = {value:0}
 
 const calcReducer = (state = initialState, action) => {
