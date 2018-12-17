@@ -28,7 +28,7 @@ class App extends Component {
           <Button style="btn btnDigit" type="digit" value="7">7</Button>
           <Button style="btn btnDigit" type="digit" value="8">8</Button>
           <Button style="btn btnDigit" type="digit" value="9">9</Button>
-          <Button style="btn btnOperator" type="operator" value="%">%</Button>
+          <Button style="btn btnOperator" type="operator" value="/"><sup>o</sup>/<sub>o</sub></Button>
         </div>
         <div>
           <Button style="btn btnOperator" type="operator"><sup>+</sup>/<sub>-</sub></Button>

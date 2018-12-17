@@ -1,4 +1,4 @@
-const initialState = {value:0}
+const initialState = {value:0, result: 0}
 
 const calcReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -8,11 +8,11 @@ const calcReducer = (state = initialState, action) => {
             }
         case 'CLEAR': 
             return {
-                ...state, value: 0
+                ...state, value: 0, result: 0
             }
         case 'EQUAL': 
             return {
-                ...state, value: eval(action.value)
+                ...state, result: eval(action.value)
             }
         default: 
             return state

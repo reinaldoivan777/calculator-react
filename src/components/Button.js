@@ -5,16 +5,11 @@ import { bindActionCreators } from "redux"
 
 class Button extends Component {
     constructor(props) {
-        super(props)
-        this.state = {
-            isOperator: false,
-            elem: []
-        }      
+        super(props)  
     }
 
     handleClick() {
         if (this.props.type === "digit") {
-            console.log(this.props.children)
             this.props.addElem(this.props.value)
         }
         if (this.props.type === "operator") {

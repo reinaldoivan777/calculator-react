@@ -56,7 +56,14 @@ hr {
 .inputDisplay {
   font-size: 20px;
   margin-right: 15px;
+  margin-bottom: 50px;
   color: #5b5b5b;
+}
+
+.samaDengan {
+  text-align: left;
+  position: relative;
+  left: -295px;
 }
 
 .result {

@@ -5,8 +5,11 @@ class Display extends Component {
     render() {
         return (
             <div className="display">
-                <div className="result">
+                <div className="inputDisplay">
                     {(this.props.value != 0) ? this.props.value : 0}
+                </div>
+                <div className="result">
+                    <span className="samaDengan">=</span>{this.props.result}
                 </div>
                 <hr/>
             </div>
@@ -16,7 +19,8 @@ class Display extends Component {
 
 const mapStateToProps = state => {
     return {
-        value: state.calculator.value
+        value: state.calculator.value,
+        result: state.calculator.result
     }
 }
  
