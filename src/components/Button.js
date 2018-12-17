@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux";
-import { addElem, addOperator, clear, equal } from "../actions";
+import { addElem, addOperator, clear, equal, negate } from "../actions";
 import { bindActionCreators } from "redux"
 
 class Button extends Component {
@@ -20,6 +20,9 @@ class Button extends Component {
         }
         if (this.props.type === "equal") {
             this.props.equal(this.props.elements)
+        }
+        if (this.props.type === "negate") {
+            this.props.negate()
         }
 
     }
@@ -44,7 +47,8 @@ const mapDispatchToProps = dispatch => {
         addElem: addElem,
         addOperator, addOperator,
         clear: clear,
-        equal: equal
+        equal: equal,
+        negate, negate
     }, dispatch)
 }
  

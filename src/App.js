@@ -31,7 +31,7 @@ class App extends Component {
           <Button style="btn btnOperator" type="operator" value="/"><sup>o</sup>/<sub>o</sub></Button>
         </div>
         <div>
-          <Button style="btn btnOperator" type="operator"><sup>+</sup>/<sub>-</sub></Button>
+          <Button style="btn btnOperator" type="negate"><sup>+</sup>/<sub>-</sub></Button>
           <Button style="btn btnDigit" type="digit" value="0">0</Button>
           <Button style="btn btnOperator" type="operator" value=".">.</Button>
           <Button style="btn btnOperator" type="equal" value="=">=</Button>

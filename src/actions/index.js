@@ -12,6 +12,12 @@ export const addOperator = (text) => {
     }
 }
 
+export const negate = () => {
+    return {
+        type: 'NEGATE'
+    }
+}
+
 export const clear = () => {
     return {
         type: 'CLEAR',

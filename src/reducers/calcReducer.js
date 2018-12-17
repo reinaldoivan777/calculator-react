@@ -39,6 +39,10 @@ const calcReducer = (state = initialState, action) => {
             return {
                 ...state, value: 0, result: 0
             }
+        case 'NEGATE':
+            return {
+                ...state, result: (state.result > 0) ? -state.result : Math.abs(state.result)
+            }
         case 'EQUAL': 
             let hasil = eval(action.value)
             localStorage.setItem('result', hasil)
