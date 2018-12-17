@@ -5,6 +5,13 @@ export const addElem = (text) => {
     }
 }
 
+export const addOperator = (text) => {
+    return {
+        type: 'ADD_OPERATOR',
+        text
+    }
+}
+
 export const clear = () => {
     return {
         type: 'CLEAR',
